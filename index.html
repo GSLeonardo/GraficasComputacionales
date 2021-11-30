@@ -289,7 +289,7 @@
         }
 
         class SportsCar extends THREE.Group {
-            constructor(x = 0, z = 0, objFileName = "./assets/Car.obj") {
+            constructor(x = 0, z = 0, objFileName = ".\assets\Car.obj") {
                 super();
                 this.x = x;
                 this.z = z;
@@ -410,7 +410,7 @@
         }
 
         class Building extends THREE.Group {
-            constructor(x = 0, z = 0, dir = 0, objFileName = "./assets/lowPolyBuilding.obj", y = 4) {
+            constructor(x = 0, z = 0, dir = 0, objFileName = ".\assets\lowPolyBuilding.obj", y = 4) {
                 super();
                 this.x = x;
                 this.z = z;
@@ -496,7 +496,7 @@
         }
 
         class Semaforo extends THREE.Group {
-            constructor(x = 0, z = 0, state = 0, dir = 0, objFileName = "./assets/objetos/traffic-light-original/traffic-light.obj") {
+            constructor(x = 0, z = 0, state = 0, dir = 0, objFileName = ".\assets\objetos\traffic-light-original\traffic-light.obj") {
                 super();
                 this.x = x;
                 this.z = z;
@@ -660,7 +660,7 @@
                 this.buildings.push(new Building(-260, -35));
 
                 let geometry = new THREE.BoxGeometry(1000, 1, 200);
-                const texture = new THREE.TextureLoader().load("./assets/street.jpg");
+                const texture = new THREE.TextureLoader().load(".\assets\street.jpg");
                 texture.wrapS = THREE.RepeatWrapping;
                 texture.wrapT = THREE.RepeatWrapping;
                 texture.repeat.set(10, 10);
@@ -805,12 +805,12 @@
                 this.rotate = false;
                 this.geometry = new THREE.BoxGeometry(size, size, size);
                 this.material = [
-                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load("./assets/texture/sh_ft.png"), side: THREE.DoubleSide}),
-                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load("./assets/texture/sh_bk.png"), side: THREE.DoubleSide}),
-                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load("./assets/texture/sh_up.png"), side: THREE.DoubleSide}),
-                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load("./assets/texture/sh_dn.png"), side: THREE.DoubleSide}),
-                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load("./assets/texture/sh_rt.png"), side: THREE.DoubleSide}),
-                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load("./assets/texture/sh_lf.png"), side: THREE.DoubleSide})
+                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load(".\assets\texture\sh_ft.png"), side: THREE.DoubleSide}),
+                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load(".\assets\texture\sh_bk.png"), side: THREE.DoubleSide}),
+                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load(".\assets\texture\sh_up.png"), side: THREE.DoubleSide}),
+                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load(".\assets\texture\sh_dn.png"), side: THREE.DoubleSide}),
+                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load(".\assets\texture\sh_rt.png"), side: THREE.DoubleSide}),
+                         new THREE.MeshPhongMaterial({map: new THREE.TextureLoader().load(".\assets\texture\sh_lf.png"), side: THREE.DoubleSide})
                         ];
                 this.scale.set(100, 100, 100);
             }
